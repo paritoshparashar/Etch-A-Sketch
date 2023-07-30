@@ -1,50 +1,22 @@
-html , body{
+html{
+    height:100%;
+}
+
+body {
     display: flex;
     justify-content: top;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height:max-content;
+    height: 100%;
+    margin: 0%;
     background-color: black;
-    margin: 10px;
-    gap: 10px;
+    gap: 50px;
 }
 
-.large-square {
-    margin: 0;
-    padding: 0;
-    border:  solid 5px transparent;
-    background: black;
-    cursor: pointer;
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.664);
-    display: flex;
-    flex-wrap: wrap;
-    /* width: 640px; */
-    max-width: 640px ;
-    /* height: 640px; */
-    max-height: 640px ;
-    border-radius: 2%;
-}
+/* --------------------------------------------- */
 
-
-
-.smallBox{
-    box-sizing: border-box;
-    background: black;
-    border: black solid 2px;
-    margin: 0;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    border-radius: 20%;
-}
-
-
-.smallBox:hover {
-    background-color:rgba(0, 0, 0, 0.247);
-}
-
-.container1{
+.head{
     display: flex;
     align-items: center;
 }
@@ -55,14 +27,14 @@ h1{
     font-size: 4em;
     font-family:'Courier New', Courier, monospace;
 }
-
+/* 
 .h-square{
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    /* width: 640px; */
+    width: 640px;
     max-width: 520px ;
-    /* height: 640px; */
+    height: 640px;
     max-height: 60px;
 }
 
@@ -73,6 +45,53 @@ h1{
     width: 20px;
     height: 20px;
     border-radius: 20%;
+} */
+/* ---------------------------------------- */
+
+p{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
 }
+
+
+
+
+
+/* --------------------------------------- */
+.large-square {
+    margin: 0;
+    padding: 0;
+    border:  solid 5px transparent;
+    background: black;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.664);
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 640px; */
+    height: 50%; 
+    aspect-ratio: 1/1;
+    border-radius: 2%;
+}
+
+
+
+.smallBox{
+    box-sizing: border-box;
+    background: white;
+    border: black solid 1px;
+    margin: 0;
+    aspect-ratio: 1/1;
+    width: 6.25%;
+    
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+
+.smallBox:hover {
+    background-color:rgba(0, 0, 0, 0.247);
+}
+
 
 

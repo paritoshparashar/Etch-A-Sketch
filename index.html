@@ -9,14 +9,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container1">
-        <div id="h-square" class="h-square"></div>
-    <h1>Etch-a-Sketch</h1>
+    <div class="head">
+        <div id="h-square" class="h-square">
+
+        </div>
+        <h1>Etch-a-Sketch</h1>
     </div>
     
-
-    <div id="large-square" class="large-square">
-
+    
+    <div class="settings">
+        <input type="range" id="slider" min="1" max="50" step="1" value="16">
+        <p> 
+            <span id="sliderValue">16x16</span>
+        </p>
     </div>
+
+    <div id="large-square" class="large-square"></div>
+    
 </body>
 </html>
