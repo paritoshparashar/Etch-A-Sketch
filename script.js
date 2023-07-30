@@ -65,7 +65,7 @@ function colorDivs (){
 
 hoveredDiv.forEach( hoverDiv => {
     hoverDiv.addEventListener('mouseenter', () => {
-        hoverDiv.style.backgroundColor = 'red';
+        hoverDiv.style.backgroundColor = 'black';
     });
 });
 }
