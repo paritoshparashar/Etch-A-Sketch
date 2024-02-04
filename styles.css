@@ -93,5 +93,13 @@ p{
     background-color:rgba(0, 0, 0, 0.247);
 }
 
-
+footer{
+    background-color: #1F2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E5E7EB;
+    font-size: 22px;
+    padding: 30px;
+}
 
