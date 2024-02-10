@@ -83,7 +83,7 @@ p{
     margin: 0;
     aspect-ratio: 1/1;
     width: 6.25%;
-    
+    user-select: none;
     cursor: pointer;
     border-radius: 15%;
 }
