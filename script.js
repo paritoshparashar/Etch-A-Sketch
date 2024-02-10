@@ -11,6 +11,7 @@ const bigBox = document.getElementById('large-square');
 const slider = document.getElementById('slider');
 const sliderValueElement = document.getElementById('sliderValue');
 
+let isRandomColour = false;
 let isMouseDown = false;
 
 document.addEventListener('mousedown', ()=> {
@@ -72,14 +73,30 @@ function sizeDivs ( size ){
 function colorDivs (){
     const hoveredDiv = document.querySelectorAll('.smallBox');
 
-hoveredDiv.forEach( hoverDiv => {
-    hoverDiv.addEventListener('mouseover', () => {
-        if (isMouseDown){
-            hoverDiv.style.backgroundColor = 'purple';
-        }
-        
+    hoveredDiv.forEach( hoverDiv => {
+        hoverDiv.addEventListener('mouseover', () => {
+            if (isMouseDown){
+                if (isRandomColour){
+                    hoverDiv.style.backgroundColor = randomColourGenerator();
+                }
+                else {
+                    hoverDiv.style.backgroundColor = 'purple';
+                }
+                
+            }
+            
+        });
     });
-});
+}
+
+function randomColourGenerator (){
+    //hexadecimal format random colour
+    return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+
+function randomColour () {
+    isRandomColour = true;
+    colorDivs();
 }
 
 

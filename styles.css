@@ -93,6 +93,11 @@ p{
     background-color:rgba(0, 0, 0, 0.247);
 }
 
+.randomColourSelector{
+    background-color: white;
+    
+}
+
 footer{
     display: flex;
     align-items: center;
@@ -101,4 +106,5 @@ footer{
     font-size: 22px;
     padding: 30px;
 }
+
 
