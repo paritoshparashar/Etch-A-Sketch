@@ -95,7 +95,7 @@ function randomColourGenerator (){
 }
 
 function randomColour () {
-    isRandomColour = true;
+    isRandomColour = !isRandomColour;
     colorDivs();
 }
 
