@@ -80,7 +80,7 @@ function colorDivs (){
                     hoverDiv.style.backgroundColor = randomColourGenerator();
                 }
                 else {
-                    hoverDiv.style.backgroundColor = 'purple';
+                    hoverDiv.style.backgroundColor = 'black';
                 }
                 
             }
