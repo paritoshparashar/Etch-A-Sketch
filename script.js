@@ -11,6 +11,15 @@ const bigBox = document.getElementById('large-square');
 const slider = document.getElementById('slider');
 const sliderValueElement = document.getElementById('sliderValue');
 
+let isMouseDown = false;
+
+document.addEventListener('mousedown', ()=> {
+    isMouseDown = true;
+})
+document.addEventListener('mouseup', ()=> {
+    isMouseDown = false;
+})
+
 for (let i = 0; i < 256; i++) {
     const smallBox = document.createElement('div');
     smallBox.id = i + '' ;
@@ -64,8 +73,11 @@ function colorDivs (){
     const hoveredDiv = document.querySelectorAll('.smallBox');
 
 hoveredDiv.forEach( hoverDiv => {
-    hoverDiv.addEventListener('click', () => {
-        hoverDiv.style.backgroundColor = 'black';
+    hoverDiv.addEventListener('mouseover', () => {
+        if (isMouseDown){
+            hoverDiv.style.backgroundColor = 'purple';
+        }
+        
     });
 });
 }
