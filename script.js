@@ -64,7 +64,7 @@ function colorDivs (){
     const hoveredDiv = document.querySelectorAll('.smallBox');
 
 hoveredDiv.forEach( hoverDiv => {
-    hoverDiv.addEventListener('mouseenter', () => {
+    hoverDiv.addEventListener('click', () => {
         hoverDiv.style.backgroundColor = 'black';
     });
 });
