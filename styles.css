@@ -96,6 +96,10 @@ p{
 .randomColourSelector{
     background-color: white;
     cursor: pointer;
+    background: black;
+    color: white;
+    border-radius: 4px;
+    border: 2px solid white;
     
 }
 
